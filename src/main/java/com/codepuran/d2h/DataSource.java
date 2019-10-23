@@ -18,4 +18,14 @@ public class DataSource {
   public List<User> users;
 
   public List<UserSubscription> userSubscriptions;
+
+
+  public DataSource(){
+
+  }
+
+  private void init(){
+
+  }
+
 }

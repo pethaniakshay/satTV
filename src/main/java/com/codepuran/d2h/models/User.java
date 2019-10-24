@@ -1,11 +1,23 @@
 package com.codepuran.d2h.models;
 
 public class User {
-  long id;
 
-  String email;
+  private long id;
 
-  String phone;
+  private String email;
+
+  private String phone;
+
+  private double accountBalance;
+
+  private Subscription subscription;
+
+  public User(long id, String email, String phone, double accountBalance) {
+    this.id = id;
+    this.email = email;
+    this.phone = phone;
+    this.accountBalance = accountBalance;
+  }
 
   public long getId() {
     return id;
@@ -29,5 +41,21 @@ public class User {
 
   public void setPhone(String phone) {
     this.phone = phone;
+  }
+
+  public double getAccountBalance() {
+    return accountBalance;
+  }
+
+  public void setAccountBalance(double accountBalance) {
+    this.accountBalance = accountBalance;
+  }
+
+  public Subscription getSubscription() {
+    return subscription;
+  }
+
+  public void setSubscription(Subscription subscription) {
+    this.subscription = subscription;
   }
 }

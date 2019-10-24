@@ -6,6 +6,11 @@ public class SpecialService {
 
   double price;
 
+  public SpecialService(String name, double price) {
+    this.name = name;
+    this.price = price;
+  }
+
   public String getName() {
     return name;
   }

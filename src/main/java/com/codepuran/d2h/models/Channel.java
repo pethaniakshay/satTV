@@ -6,6 +6,11 @@ public class Channel {
 
   double price;
 
+  public Channel(String name, double price) {
+    this.name = name;
+    this.price = price;
+  }
+
   public String getName() {
     return name;
   }
